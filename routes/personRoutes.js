@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router();
 const  Person = require('../models/person')
 
-
 //Post route to add a person
 router.post('/', async (req,res) => {
     try{
@@ -54,8 +53,9 @@ router.get('/:workType', async(req, res)=>{
     }
 })
 
+
 // Update Person using PUT/PATCH method
-router.put('/:id', async(req,res) =>{
+router.put('/:id',async(req,res) =>{
     try{
 
         const personId = req.params.id; 
